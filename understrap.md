@@ -15,8 +15,11 @@ Install ACF via dashboard/plugins.
 Edit _child_theme_variables.scss
 
 $primary: #20B22B;
+
 $secondary: #0A5B12;
+
 $warning: #F41106;
+
 
 Open terminal and navigate to child theme folder. 
 
