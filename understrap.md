@@ -10,7 +10,17 @@ Install Understrap child theme via ZIP.
 
 Install ACF via dashboard/plugins.
 
+## Add brand colours to SCSS
+
+Edit _child_theme_variables.scss
+
+$primary: #20B22B;
+$secondary: #0A5B12;
+$warning: #F41106;
+
+Open terminal and navigate to child theme folder. 
+
 ```
-composer create-project roots/sage braw2020
+gulp watch
 ```
 
