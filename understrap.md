@@ -12,7 +12,7 @@ Install ACF via dashboard/plugins.
 
 ## Add brand colours to SCSS
 
-Edit _child_theme_variables.scss
+Edit:  _child_theme_variables.scss
 
 $primary: #20B22B;
 
