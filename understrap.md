@@ -45,7 +45,7 @@ $warning: #F41106;
 }
 ```
 
-Open terminal and navigate to child theme folder. 
+Open terminal and navigate to child theme folder, build files with:
 
 
 
