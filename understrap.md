@@ -61,19 +61,10 @@ gulp watch
 
 1. NPM install from theme folder.
 
-
-
-3. Add js to scripts via gulpfile.js
-
-4. Import scss via child-theme.scss
-
-5. Gulp watch
-
-
 ```
 npm install swiper
 ```
-2. Copy scss and js to src via gulpfile.js within copy-assets
+2. Copy scss and js to src via gulpfile.js within copy-assets task
 ```
 // Copy all Swiper SCSS files
 gulp.src( `${paths.node}swiper/**/*.scss` )
@@ -84,7 +75,7 @@ gulp.src( `${paths.node}swiper/src/swiper.js` )
 .pipe( gulp.dest( `${paths.dev}/js/swiper` ) );
 
 ```
-3. Add js to scripts via gulpfile.js within scripts
+3. Add js to scripts via gulpfile.js within scripts task
 
 ```
  // Add swiper
