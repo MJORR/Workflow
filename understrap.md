@@ -6,7 +6,11 @@ For a local environment download and set up [Local by Flywheel](https://local.ge
 
 Install Wordpress and Understrap parent theme via dashboard/themes.
 
-Install Understrap child theme via ZIP.
+Install Understrap child theme via ZIP or git clone.
+
+```
+https://github.com/understrap/understrap-child.git
+```
 
 Install ACF via dashboard/plugins.
 
