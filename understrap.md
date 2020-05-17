@@ -57,3 +57,45 @@ Open terminal and navigate to child theme folder, build files with:
 gulp watch
 ```
 
+## Add Swiper - mobile touch slider (Recommended)
+
+1. NPM install from theme folder.
+
+
+
+3. Add js to scripts via gulpfile.js
+
+4. Import scss via child-theme.scss
+
+5. Gulp watch
+
+
+```
+npm install swiper
+```
+2. Copy scss and js to src via gulpfile.js within copy-assets
+```
+// Copy all Swiper SCSS files
+gulp.src( `${paths.node}swiper/**/*.scss` )
+.pipe( gulp.dest( `${paths.dev}/sass/swiper` ) );
+
+// Copy all Swiper JS files
+gulp.src( `${paths.node}swiper/src/swiper.js` )
+.pipe( gulp.dest( `${paths.dev}/js/swiper` ) );
+
+```
+3. Add js to scripts via gulpfile.js within scripts
+
+```
+ // Add swiper
+ `${paths.dev}/js/swiper`
+
+```
+4. Import scss via child-theme.scss
+
+```
+// import swiper //
+@import "../src/sass/swiper/swiper";   
+
+```
+Use gulp watch to update.
