@@ -71,15 +71,15 @@ gulp.src( `${paths.node}swiper/**/*.scss` )
 .pipe( gulp.dest( `${paths.dev}/sass/swiper` ) );
 
 // Copy all Swiper JS files
-gulp.src( `${paths.node}swiper/src/swiper.js` )
+gulp.src( `${paths.node}swiper/**/*.js` )
 .pipe( gulp.dest( `${paths.dev}/js/swiper` ) );
 
 ```
 3. Add js to scripts via gulpfile.js within scripts task
 
 ```
- // Add swiper
- `${paths.dev}/js/swiper`
+// Add swiper
+`${paths.dev}/js/swiper/js/swiper.js`,
 
 ```
 4. Import scss via child-theme.scss
