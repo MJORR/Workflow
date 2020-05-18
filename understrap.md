@@ -89,4 +89,6 @@ gulp.src( `${paths.node}swiper/**/*.js` )
 @import "../src/sass/swiper/swiper";   
 
 ```
-Use gulp watch or gulp scripts to update.
+Use gulp dist gulp to copy the files to the /dist folder for distribution.
+
+Use gulp scripts just to compile the scripts.
