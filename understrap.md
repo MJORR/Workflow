@@ -89,4 +89,4 @@ gulp.src( `${paths.node}swiper/**/*.js` )
 @import "../src/sass/swiper/swiper";   
 
 ```
-Use gulp watch to update.
+Use gulp watch or gulp scripts to update.
