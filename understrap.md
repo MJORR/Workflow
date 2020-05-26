@@ -57,7 +57,7 @@ Open terminal and navigate to child theme folder, build files with:
 gulp watch
 ```
 
-## Add Swiper - mobile touch slider (Recommended)
+## Add Swiper - mobile touch slider
 
 1. NPM install from theme folder.
 
