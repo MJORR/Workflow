@@ -138,3 +138,140 @@ gulp.src( `${paths.node}swiper/**/*.js` )
 Use 'gulp dist' to copy the files to the /dist folder for distribution.
 
 Use 'gulp scripts' just to compile the scripts.
+
+## Add GDPR cookie consent
+
+1. Navigate to 'src' folder.
+
+```
+git clone https://github.com/ketanmistry/ihavecookies.git
+```
+
+2. Add js to scripts via gulpfile.js within scripts task.
+
+```
+// Add jquery.ihavecookies.js
+`${paths.dev}/ihavecookies/jquery.ihavecookies.js`,
+
+```
+3. Open src/ihavecookies/example.css copy the following styles.
+
+```
+/* Cookie Dialog */
+#gdpr-cookie-message {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    max-width: 375px;
+    background-color: $secondary;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 6px 6px rgba(0,0,0,0.25);
+    margin-left: 30px;
+
+    h4 {
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    h5 {
+        color: white;
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: white;
+        font-size: 15px;
+        line-height: 1.5em;
+    }
+
+    ul {
+        color: white;
+        font-size: 15px;
+        line-height: 1.5em;
+    }
+
+    p:last-child {
+        margin-bottom: 0;
+        text-align: right;
+    }
+
+    li {
+        width: 49%;
+        display: inline-block;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        padding-bottom: 2px;
+        border-bottom: 1px dotted rgba(255,255,255,0.75);
+        transition: all 0.3s ease-in;
+    }
+
+    a:hover {
+        color: white;
+        border-bottom-color: var(--red);
+        transition: all 0.3s ease-in;
+    }
+
+    button:disabled {
+        opacity: 0.3;
+    }
+}  
+
+```
+5. Init new slider within custom-javascript.js.   See more layouts here: https://swiperjs.com/demos/
+
+```
+(function($){
+
+    $(function() {
+
+        /* Image Slider - Swiper */
+        var imageSlider = new Swiper('.image-slider', {
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false
+        },
+        loop: true,
+        spaceBetween: 30,
+        slidesPerView: 5,
+        breakpoints: {
+            // when window is <= 580px
+            580: {
+                slidesPerView: 1,
+                spaceBetween: 10
+            },
+            // when window is <= 768px
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            // when window is <= 992px
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 20
+            },
+            // when window is <= 1200px
+            1200: {
+                slidesPerView: 4,
+                spaceBetween: 20
+            },
+
+        }
+        });
+		
+    });
+
+})(jQuery);  
+
+```
+Use 'gulp dist' to copy the files to the /dist folder for distribution.
+
+Use 'gulp scripts' just to compile the scripts.
