@@ -1,4 +1,4 @@
-# Template Development using Understrap
+# Theme Development using Understrap
 
 For a local environment download and set up [Local by Flywheel](https://local.getflywheel.com/)
 
