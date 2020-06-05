@@ -272,14 +272,14 @@ git clone https://github.com/ketanmistry/ihavecookies.git
 npm install masonry-layout --save
 
 ```
-Copy js to src via gulpfile.js within copy-assets task
+1. Copy js to src via gulpfile.js within copy-assets task
 
 ```
 // Copy Masonry-Layout JS files
     gulp.src( `${paths.node}masonry-layout/dist/masonry.pkgd.min.js` )
     .pipe( gulp.dest( `${paths.dev}/js/masonry` ) );
 ```
-Add js to scripts via gulpfile.js within scripts task
+2. Add js to scripts via gulpfile.js within scripts task
 
 ```
 // Add swiper
