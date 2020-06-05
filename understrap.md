@@ -18,35 +18,19 @@ Install ACF via dashboard/plugins.
 
 Edit:  _child_theme_variables.scss
 
-
 ```
+//
+// Color system
+//
+
 $primary: #20B22B;
 $secondary: #0A5B12;
 $warning: #F41106;
 
-.navbar-light {
-    .navbar-nav {
-        .nav-link{
-            color: $secondary;
-            font-size: 1.1rem;
-            text-transform: uppercase;
-        }
-        .nav-link:hover {
-            color: $primary;
-        }
-    }
-    .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0,112,202, 0.5)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); 
-    }
-    .navbar-toggler{
-        border: none;
-    }   
-}
+//transparent gradients
+$primary-rgba: rgba(32, 178, 43, 0.5);
+$secondary-rgba: rgba(10, 91, 18, 0.5) ;
 
-.site-gradient {
-    background: $primary;
-    background: linear-gradient(0deg, $primary 0%, $secondary 100%);
-}
 ```
 
 Open terminal and navigate to child theme folder, build files with:
