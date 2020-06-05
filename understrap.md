@@ -279,3 +279,9 @@ Copy js to src via gulpfile.js within copy-assets task
     gulp.src( `${paths.node}masonry-layout/dist/masonry.pkgd.min.js` )
     .pipe( gulp.dest( `${paths.dev}/js/masonry` ) );
 ```
+Add js to scripts via gulpfile.js within scripts task
+
+```
+// Add swiper
+        `${paths.dev}/js/masonry/masonry.pkgd.min.js`,	
+```
