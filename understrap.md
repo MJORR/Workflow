@@ -266,5 +266,9 @@ git clone https://github.com/ketanmistry/ihavecookies.git
 
 ```
 
+## Add Masonry
 
+```
+npm install masonry-layout --save
 
+```
