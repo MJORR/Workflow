@@ -182,7 +182,7 @@ gulp watch
 1. NPM install from theme folder.
 
 ```
-npm install swiper -g
+npm install swiper
 ```
 2. Copy scss and js to src via gulpfile.js within copy-assets task
 ```
