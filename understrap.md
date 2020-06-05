@@ -88,87 +88,6 @@ Edit:  _child_theme.scss
     letter-spacing:0.05em
 }
 
-/* Cookie Dialog */
-#gdpr-cookie-message {
-    position: fixed;
-    right: 30px;
-    bottom: 30px;
-    max-width: 375px;
-    background-color: $secondary;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 6px 6px rgba(0,0,0,0.25);
-    margin-left: 30px;
-
-    h4 {
-        color: white;
-        font-size: 18px;
-        font-weight: 500;
-        margin-bottom: 10px;
-    }
-
-    h5 {
-        color: white;
-        font-size: 15px;
-        font-weight: 500;
-        margin-bottom: 10px;
-    }
-
-    p {
-        color: white;
-        font-size: 15px;
-        line-height: 1.5em;
-    }
-
-    ul {
-        color: white;
-        font-size: 15px;
-        line-height: 1.5em;
-    }
-
-    p:last-child {
-        margin-bottom: 0;
-        text-align: right;
-    }
-
-    li {
-        width: 49%;
-        display: inline-block;
-    }
-
-    a {
-        color: white;
-        text-decoration: none;
-        font-size: 15px;
-        padding-bottom: 2px;
-        border-bottom: 1px dotted rgba(255,255,255,0.75);
-        transition: all 0.3s ease-in;
-    }
-
-    a:hover {
-        color: white;
-        border-bottom-color: var(--red);
-        transition: all 0.3s ease-in;
-    }
-
-    button {
-        background-color: $warning;
-        color: #fff;
-        border: none;
-        border-radius: 4px;
-        padding: 6px 10px;
-        margin: 5px;
-    }
-
-    button:hover {
-        opacity: 0.8;
-    }
-
-    button:disabled {
-        opacity: 0.3;
-    }
-}
-
 ```
 
 Open terminal and navigate to child theme folder, build files with:
@@ -255,9 +174,9 @@ gulp.src( `${paths.node}swiper/**/*.js` )
 })(jQuery);  
 
 ```
-Use 'gulp dist' to copy the files to the /dist folder for distribution.
+Use 'gulp copy-assets' to copy the files.
 
-Use 'gulp scripts' just to compile the scripts.
+Use 'gulp scripts' to compile the scripts.
 
 ## Add GDPR cookie consent
 
@@ -274,7 +193,7 @@ git clone https://github.com/ketanmistry/ihavecookies.git
 `${paths.dev}/ihavecookies/jquery.ihavecookies.js`,
 
 ```
-3. Open src/ihavecookies/example.css copy the following styles.
+3. Add the following styles to  '_child_theme.scss'.
 
 ```
 /* Cookie Dialog */
