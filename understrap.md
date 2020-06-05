@@ -33,7 +33,7 @@ $secondary-rgba: rgba(10, 91, 18, 0.5);
 
 ```
 
-Edit:  _child_them.scss
+Edit:  _child_theme.scss
 
 ```
 // custom css
