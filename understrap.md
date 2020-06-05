@@ -283,5 +283,5 @@ npm install masonry-layout --save
 
 ```
 // Add swiper
-        `${paths.dev}/js/masonry/masonry.pkgd.min.js`,	
+   `${paths.dev}/js/masonry/masonry.pkgd.min.js`,	
 ```
