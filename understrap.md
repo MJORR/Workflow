@@ -317,4 +317,9 @@ jQuery(function($){
 
 ## Add Lightbox
 
+Add fancyapps to src folder
+```
+https://github.com/fancyapps/fancybox.git
+```
+
 
