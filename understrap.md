@@ -307,10 +307,10 @@ jQuery(function($){
 /* Masonry */
 .gallery-wrapper {
     overflow: hidden;
-  }
+}
   
-  .grid-item {
+.grid-item {
     padding-bottom: 3rem;
-  }
-  ```
+}
+```
 5. Add album partial. 
