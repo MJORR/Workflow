@@ -310,7 +310,11 @@ jQuery(function($){
 }
   
 .grid-item {
-    padding-bottom: 3rem;
+    padding-bottom: 30px;
 }
 ```
 5. Add album partial. 
+
+## Add Lightbox
+
+
