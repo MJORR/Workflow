@@ -285,3 +285,32 @@ npm install masonry-layout --save
 // Add swiper
    `${paths.dev}/js/masonry/masonry.pkgd.min.js`,	
 ```
+3. Initialize with jQuery add to custom-javascript.js
+
+```
+// Masonry
+jQuery(function($){
+    jQuery('.gallery-wrapper').masonry({
+        // set itemSelector so .grid-sizer is not used in layout
+        itemSelector: '.grid-item',
+        // use element for option
+        columnWidth: '.grid-sizer',
+        percentPosition: true,
+        transitionDuration: 0,
+    });
+});
+```
+
+4.  Add CSS to custom_theme.scss
+
+```
+/* Masonry */
+.gallery-wrapper {
+    overflow: hidden;
+  }
+  
+  .grid-item {
+    padding-bottom: 3rem;
+  }
+  ```
+5. Add album partial. 
