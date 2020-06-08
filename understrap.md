@@ -321,5 +321,9 @@ Add fancyapps to src folder
 ```
 https://github.com/fancyapps/fancybox.git
 ```
-
+Gulp file 
+```
+// Add fancybox
+`${paths.dev}/fancybox/dist/jquery.fancybox.js`,
+```
 
