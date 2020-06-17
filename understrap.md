@@ -1,5 +1,7 @@
 # Theme Development using Understrap
 
+The aim of this workflow is to provide a good starting point for website development.
+
 For a local environment download and set up [Local by Flywheel](https://local.getflywheel.com/)
 
 ## Install
