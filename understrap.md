@@ -268,10 +268,12 @@ git clone https://github.com/ketanmistry/ihavecookies.git
 
 ```
 
-## Add Masonry
+## Add Masonry and ImageLoaded
+Imageloaded activates masonry layout once files have loaded
 
 ```
 npm install masonry-layout --save
+npm install imagesloaded
 
 ```
 1. Copy js to src via gulpfile.js within copy-assets task
