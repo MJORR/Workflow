@@ -273,7 +273,7 @@ Imageloaded activates masonry layout once files have loaded
 
 ```
 npm install masonry-layout --save
-npm install imagesloaded
+npm install imagesloaded --save
 
 ```
 1. Copy js to src via gulpfile.js within copy-assets task
