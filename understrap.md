@@ -282,25 +282,41 @@ npm install imagesloaded --save
 // Copy Masonry-Layout JS files
     gulp.src( `${paths.node}masonry-layout/dist/masonry.pkgd.min.js` )
     .pipe( gulp.dest( `${paths.dev}/js/masonry` ) );
+    
+// Copy imagesLoaded JS files
+    gulp.src( `${paths.node}imagesloaded/imagesloaded.pkgd.js` )
+    .pipe( gulp.dest( `${paths.dev}/js/imageloaded` ) );
+    
 ```
 2. Add js to scripts via gulpfile.js within scripts task
 
 ```
-// Add swiper
-   `${paths.dev}/js/masonry/masonry.pkgd.min.js`,	
+// Add masonry
+   `${paths.dev}/js/masonry/masonry.pkgd.js`,
+   
+// Add imagesloaded
+   `${paths.dev}/js/imageloaded/imageloaded.pkgd.js`,
+   
 ```
 3. Initialize with jQuery add to custom-javascript.js
 
 ```
-// Masonry
+// Masonry 
 jQuery(function($){
-    jQuery('.gallery-wrapper').masonry({
+   
+    // init Masonry
+    var $grid = jQuery('.gallery-wrapper').masonry({
         // set itemSelector so .grid-sizer is not used in layout
         itemSelector: '.grid-item',
         // use element for option
         columnWidth: '.grid-sizer',
         percentPosition: true,
         transitionDuration: 0,
+    });
+    
+    // layout Masonry after each image loads
+    $grid.imagesLoaded().progress( function() {
+        $grid.masonry('layout');
     });
 });
 ```
