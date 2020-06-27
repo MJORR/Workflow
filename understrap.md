@@ -132,7 +132,7 @@ gulp.src( `${paths.node}swiper/**/*.js` )
 
 ```
 
-Add the required components within swiper.scss
+5. Add the required components within swiper.scss
 
 ```
 //IMPORT_COMPONENTS
@@ -141,7 +141,7 @@ Add the required components within swiper.scss
 
 
 
-5. Init new slider within custom-javascript.js.   See more layouts here: https://swiperjs.com/demos/
+6. Init new slider within custom-javascript.js.   See more layouts here: https://swiperjs.com/demos/
 
 ```
 (function($){
