@@ -123,6 +123,7 @@ gulp.src( `${paths.node}swiper/**/*.js` )
 `${paths.dev}/js/swiper/js/swiper.js`,
 
 ```
+
 4. Import scss via child-theme.scss
 
 ```
@@ -130,6 +131,16 @@ gulp.src( `${paths.node}swiper/**/*.js` )
 @import "../src/sass/swiper/swiper";   
 
 ```
+
+Add the required components within swiper.scss
+
+```
+//IMPORT_COMPONENTS
+@import "./components/navigation/navigation";
+```
+
+
+
 5. Init new slider within custom-javascript.js.   See more layouts here: https://swiperjs.com/demos/
 
 ```
