@@ -35,63 +35,6 @@ $secondary-rgba: rgba(10, 91, 18, 0.5);
 
 ```
 
-Edit:  _child_theme.scss
-
-```
-// custom css
-
-:root {
-    --bg-1: url(../images/woods.jpg) ;
-  }
-
-
-.navbar-light {
-
-    box-shadow: 0 8px 8px rgba(0,0,0,0.1);
-
-    .navbar-nav {
-        .nav-link{
-            color: $secondary;
-            font-size: 1.2rem;
-            text-transform: uppercase;
-        }
-        .nav-link:hover {
-            color: $primary;
-        }
-    }
-    .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0,112,202, 0.5)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); 
-    }
-    .navbar-toggler{
-        border: none;
-    }   
-}
-
-.site-footer {
-    .navbar-light {
-        box-shadow: none;
-    }
-}
-
-.site-gradient {
-    background: $primary;
-    background: linear-gradient(0deg, $primary 0%, $secondary 100%);
-}
-
-.site-gradient-image {
-    background: linear-gradient($secondary-rgba, $primary-rgba), var(--bg-1) center center;
-    background-size: cover;
-    color: white;
-    min-height: 75vh;
-}
-
-.font-light-200 {
-    font-weight: 200 !important;
-    letter-spacing:0.05em
-}
-
-```
-
 Open terminal and navigate to child theme folder, build files with:
 
 ```
@@ -208,6 +151,9 @@ git clone https://github.com/ketanmistry/ihavecookies.git
 ```
 3. Add the following styles to  '_child_theme.scss'.
 
+<details>
+  <summary>Click to expand!</summary>
+
 ```
 /* Cookie Dialog */
 #gdpr-cookie-message {
@@ -278,6 +224,7 @@ git clone https://github.com/ketanmistry/ihavecookies.git
 }  
 
 ```
+</details>
 
 ## Add Masonry and ImageLoaded
 Imageloaded activates masonry layout once files have loaded
