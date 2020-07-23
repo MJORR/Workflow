@@ -305,3 +305,8 @@ Gulp file
 `${paths.dev}/fancybox/dist/jquery.fancybox.js`,
 ```
 
+## To Do List
+
+Add work flow for Braw Media child theme
+Add checklist
+Add settings or content import.
