@@ -82,7 +82,7 @@ gulp.src( `${paths.node}swiper/**/*.js` )
 @import "./components/navigation/navigation";
 ```
 
-
+Note: make sure edit is in correct file.
 
 6. Init new slider within custom-javascript.js.   See more layouts here: https://swiperjs.com/demos/
 
@@ -130,9 +130,7 @@ gulp.src( `${paths.node}swiper/**/*.js` )
 })(jQuery);  
 
 ```
-Use 'gulp copy-assets' to copy the files.
 
-Use 'gulp scripts' to compile the scripts.
 
 ## Add GDPR cookie consent
 
