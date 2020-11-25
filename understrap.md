@@ -11,7 +11,7 @@ Install Wordpress and Understrap parent theme via dashboard/themes.
 Install Understrap child theme via ZIP or git clone.
 
 ```
-https://github.com/understrap/understrap-child.git
+git clone https://github.com/understrap/understrap-child.git
 ```
 
 Install ACF via dashboard/plugins.
