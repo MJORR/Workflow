@@ -305,6 +305,254 @@ Gulp file
 
 ## To Do List
 
+
+```
+// Braw custom css 
+body {
+    background-color: #f7f7f5;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4{
+    /*font-family: 'Montserrat', sans-serif;
+    font-weight: 700;*/
+    font-family: 'Poppins', sans-serif;
+}
+
+.braw-media {
+    color: white;
+}
+
+/* navbar */
+.navbar {
+    z-index: 15;
+    transition: 0.7s ease;
+    background: white;
+    
+     .nav-white {
+        background-color: white;
+    }
+    
+    .collapsed {
+    background: transparent;
+    }
+    
+    .collapsed.nav-white {
+        background-color: white;
+    }
+}
+
+/*  burger  */
+.navbar {
+    
+    .navbar-toggler {
+        background: none;
+        border: none;
+      }
+      
+      .navbar-toggler:active,
+      .navbar-toggler:focus {
+        outline: 0;
+      }
+      
+      .navbar-toggler .icon-bar {
+        display: block;
+        width: 32px;
+        height: 5px;
+        margin: 5px 0;
+        transition: all 0.4s;
+      }
+      
+      .navbar-toggler .icon-bar:nth-of-type(1) {
+        transform: rotate(45deg) translate(8px, 6px);
+        //background: white;
+        background: $primary;
+        width: 28px;
+        border-radius: 3px;
+      }
+      
+      .navbar-toggler .icon-bar:nth-of-type(2) {
+        transform: rotate(720deg);
+        opacity: 1;
+        filter: alpha(opacity=1);
+      }
+      
+      .navbar-toggler .icon-bar:nth-of-type(3) {
+        transform: rotate(135deg) translate(-8px, 6px);
+        //background: white;
+        background: $primary;
+        width: 28px;
+        border-radius: 3px;
+      }
+      
+      .navbar-toggler.collapsed .icon-bar:nth-of-type(1) {
+        transform: rotate(0);
+        background: white;
+        border-radius: 0;
+        width: 32px;
+      }
+      
+      .navbar-toggler.collapsed .icon-bar:nth-of-type(2) {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        transform: rotate(0);
+        background: white;
+        border-radius: 0;
+        width: 32px;
+      }
+      
+      .navbar-toggler.collapsed .icon-bar:nth-of-type(3) {
+        transform: rotate(0);
+        background: white;
+        border-radius: 0;
+        width: 32px;
+      }
+}   
+
+.site-gradient {
+    background: $primary;
+    background: linear-gradient(150deg, $gradient-dark 30%, $secondary 100%);
+}
+
+.background-image {
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* Card Columns 
+.card-columns {
+    column-count: 1!important;
+overflow: visible;
+}
+
+@media (min-width: 576px) {
+.card-columns {
+    column-count: 2!important;
+}
+}
+
+@media (min-width: 768px) {
+.card-columns {
+    column-count: 2!important;
+}
+}
+
+@media (min-width: 992px) {
+.card-columns {
+    column-count: 3!important;
+}
+} */
+
+/* Cookie Dialog */
+#gdpr-cookie-message {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    max-width: 375px;
+    background-color: #f7f7f5;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 0 6px 6px rgba(0,0,0,0.25);
+    margin-left: 30px;
+    z-index: 1000;
+
+    h4 {
+        color: $primary;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    h5 {
+        color: $primary;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.5em;
+    }
+
+    ul {
+        font-size: 14px;
+        line-height: 1.5em;
+    }
+
+    p:last-child {
+        margin-bottom: 0;
+        text-align: right;
+    }
+
+    li {
+        width: 49%;
+        display: inline-block;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 15px;
+        padding-bottom: 2px;
+        border-bottom: 1px dotted rgba(255,255,255,0.75);
+        transition: all 0.3s ease-in;
+    }
+
+    a:hover {
+        color: $primary;
+        border-bottom-color: var(--red);
+        transition: all 0.3s ease-in;
+    }
+
+    button {
+        background-color: $primary;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 6px 10px;
+        margin: 5px;
+    }
+
+    button:hover {
+        opacity: 0.8;
+    }
+
+    button:disabled {
+        opacity: 0.3;
+    }
+}
+
+/* footer */
+#wrapper-footer-full {
+    a {
+        color: white;
+    }
+    img {
+        width: 72px;
+        margin-bottom: 20px;
+        margin-left: 12px;
+    }
+    ul {
+        color: white;
+        margin-left: -10px;
+    }
+    .menu:nth-of-type(1) {
+        margin-bottom: 0;
+    }
+}
+
+/* admin bar */
+.admin-bar .fixed-top {
+  top: 32px;
+}
+
+@media screen and (max-width: 782px) {
+  .admin-bar .fixed-top {
+    top: 46px;
+  }
+}
+
+```
+
 Add work flow for Braw Media child theme
 
 Add checklist
