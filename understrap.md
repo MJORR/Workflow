@@ -35,8 +35,13 @@ $secondary-rgba: rgba(10, 91, 18, 0.5);
 
 ```
 
-Open terminal and navigate to child theme folder, build files with:
+Check Gulp version
 
+```
+gulp --version
+```
+
+Open terminal and navigate to child theme folder, build files with:
 ```
 gulp watch
 ```
