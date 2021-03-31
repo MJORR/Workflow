@@ -14,6 +14,12 @@ Install Understrap child theme via ZIP or git clone.
 git clone https://github.com/understrap/understrap-child.git
 ```
 
+Within theme folder:
+
+```
+sudo npm install gulp && sudo npm install --save del && sudo gulp build
+```
+
 Install ACF via dashboard/plugins.
 
 ## Add brand colours, site gradient, menu changes and additional styles to SCSS
