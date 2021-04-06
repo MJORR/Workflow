@@ -17,7 +17,7 @@ git clone https://github.com/understrap/understrap-child.git
 Within theme folder:
 
 ```
-sudo npm install gulp && sudo npm install --save del && sudo gulp build
+npm install gulp && npm install --save del && gulp build
 
 npm install node-sass gulp-sass --save-dev
 
