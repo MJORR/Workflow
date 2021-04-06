@@ -18,6 +18,9 @@ Within theme folder:
 
 ```
 sudo npm install gulp && sudo npm install --save del && sudo gulp build
+
+npm install node-sass gulp-sass --save-dev
+
 ```
 
 Install ACF via dashboard/plugins.
