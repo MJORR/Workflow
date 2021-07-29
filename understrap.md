@@ -21,6 +21,8 @@ npm install gulp && npm install --save del && gulp build
 
 npm install node-sass gulp-sass --save-dev
 
+npm install --save-dev @babel/core
+
 ```
 
 Install ACF via dashboard/plugins.
